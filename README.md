@@ -1,10 +1,10 @@
+## Custom Fork
+This is a lightweight version of Meng To's [Spring](https://github.com/MengTo/Spring) animation library with just the necessary files for animations and easy drop-in for any Swift project.
+
 ![](http://cl.ly/image/3a1r1d3l3D1j/spring-logo.jpg)
 
 ## Installation
-Drop in the Spring folder to your Xcode project.
-
-Or via CocoaPods pre-release:
-`pod 'Spring', '~> 1.0.1'`
+Drop in the `Spring` folder to your Xcode project.
 
 ## Usage with Storyboard
 In Identity Inspector, connect the UIView to SpringView Class and set the animation properties in Attribute Inspector.
@@ -14,9 +14,6 @@ In Identity Inspector, connect the UIView to SpringView Class and set the animat
 ## Usage with Code
     layer.animation = "squeezeDown"
     layer.animate()
-
-## Demo The Animations
-![](http://cl.ly/image/1n1E2j3W3y24/springscreen.jpg)
 
 ## Chaining Animations
     layer.y = -50
@@ -31,35 +28,38 @@ In Identity Inspector, connect the UIView to SpringView Class and set the animat
     animateTo()
     animateToNext { ... }
 
-## Animation
-    shake
-    pop
-    morph
-    squeeze
-    wobble
-    swing
-    flipX
-    flipY
-    fall
-    squeezeLeft
-    squeezeRight
-    squeezeDown
-    squeezeUp
+## Animations
     slideLeft
     slideRight
     slideDown
     slideUp
+    squeezeLeft
+    squeezeRight
+    squeezeDown
+    squeezeUp
+    zoomIn
+    zoomOut
     fadeIn
     fadeOut
     fadeInLeft
     fadeInRight
     fadeInDown
     fadeInUp
-    zoomIn
-    zoomOut
+    fall
+    rotate
+    heartBeat
+    pulse
+    shake
+    pop
+    swing
+    morph
+    squeeze
+    wobble
     flash
+    flipX
+    flipY
 
-## Curve
+## Curves
     spring
     linear 
     easeIn 
@@ -67,19 +67,24 @@ In Identity Inspector, connect the UIView to SpringView Class and set the animat
     easeInOut
 
 ## Properties
-    force
-    duration
+    animation
+    curve
+    autostart
+    autohide
     delay
+    duration
+    force
     damping
     velocity
+    rotateDegrees
     repeatCount
-    scale
     x
     y
+    scaleX
+    scaleY
     rotate
 
 \* Not all properties work together. Play with the demo app.
-
 
 ## Autostart
 Allows you to animate without code. Don't need to use this is if you plan to start the animation in code.
