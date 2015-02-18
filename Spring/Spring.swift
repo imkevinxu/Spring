@@ -577,4 +577,10 @@ public class Spring: NSObject {
         rotate = 0
         opacity = 1
     }
+
+    // MARK: - Helper Methods
+
+    public func degreesToRadians(degrees: CGFloat) -> CGFloat {
+        return degrees * CGFloat(M_PI/180)
+    }
 }
