@@ -135,6 +135,7 @@ public class Spring: NSObject {
     // MARK: - Animation Preset Values
 
     func animatePreset() {
+        alpha = 0.99
         if animation == "" {
             return
         }
